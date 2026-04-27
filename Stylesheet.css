@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9fffb;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7bc8a4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #7bc8a4;
+}
+
+
+.banner {
+    background-color: #dff5ec;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7bc8a4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #5fae8c;
+}
+
+.intro {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+	color: #7bc8a4;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a{    
+    text-decoration: none;
+    color: #000000;
+   
+}
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color:  #dff5ec;
+}
+
+.socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #7bc8a4;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9em;
+}
+
+.profile-picture{
+    max-width: 20%;
+    margin-top: 2px;
+	 margin-bottom: 2pxpx;
+	text-align:center;
+	border-radius:25%;
+}
+ 
+
+.resume-pdf{ 
+ max-width: 110%;
+    margin-top: 2px;
+	 margin-bottom: 2pxpx;
+  text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+	
+} 
+
+.features img {
+    width: 100%;
+    display: block;
+}
+
+
+.card-about {
+    background:  #dff5ec;
+    padding: 25px;
+    width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+   
+}
+
+.card-aboutt {
+  background: white;
+    padding: 50px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.project img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.project-text {
+    width: 60%;
+}
+
+
+.yess-picture{
+    max-width: 45%;
+    margin-top: 2px;
+	 margin-bottom: 2pxpx;
+	text-align:center;
+	border-radius:2%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* THIS makes perfect squares */
+.img-box {
+    width: 100%;
+    padding-top: 100%;        /* creates square shape */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* IMAGE FITS INSIDE THE SQUARE */
+.img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery h2 {
+	text-align:center;
+}
+.gallery p {
+	text-align:center;
+}
+
+
+
+@media (min-width: 769px) {
+    nav ul {
+        display: flex !important;
+        max-height: none;
+    }
+}
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #7bc8a4;
+}

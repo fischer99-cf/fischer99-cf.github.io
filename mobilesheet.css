@@ -1,0 +1,105 @@
+/* =========================
+   MOBILE STYLES
+========================= */
+@media (max-width: 768px) {
+
+    /* HEADER LAYOUT */
+    header {
+        padding: 15px 20px;
+    }
+
+    /* SHOW HAMBURGER */
+    .menu-toggle {
+        display: block;
+        margin-left: auto; /* pushes it right */
+    }
+
+  
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+
+        background: white;
+        width: 100%;
+    }
+
+    
+    nav ul.active {
+        max-height: 300px; 
+    }
+
+    nav a {
+        padding: 12px;
+        border-top: 1px solid #eee;
+        display: block;
+        text-align: center;
+    }
+
+    
+    .features {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    
+    .card {
+        width: 100%;
+    }
+
+    .card-about,
+    .card-aboutt {
+        width: 100%;
+        padding: 20px;
+    }
+
+   
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+   
+    .profile-picture {
+        max-width: 60%;
+    }
+
+    .yess-picture {
+        max-width: 100%;
+    }
+
+   
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* TEXT SCALING */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* SPACING */
+    .intro {
+        padding: 30px 20px;
+    }
+}
